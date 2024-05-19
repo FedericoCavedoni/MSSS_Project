@@ -1,0 +1,169 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TextView per il titolo -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/heart_rate_title"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/tipText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTextView"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="TIP"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tipText"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <!-- LineChart -->
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="600sp"
+            android:layout_below="@id/tips"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Button per tornare alla home -->
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/finalAverageTextView"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/bohText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineChart"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="INDEX ANALYSIS"
+            android:padding="16dp" />
+
+        <!-- TextView per l'SDNN -->
+        <TextView
+            android:id="@+id/hrvSdnnTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bohText"
+            android:textSize="18sp"
+            android:padding="1dp" />
+
+        <!-- TextView per l'RMSSD -->
+        <TextView
+            android:id="@+id/hrvRmssdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hrvSdnnTextView"
+            android:textSize="18sp"
+            android:padding="1dp" />
+
+        <TextView
+            android:id="@+id/indexTextViewConclusion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hrvRmssdTextView"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="35sp"/>
+
+        <TextView
+            android:id="@+id/bpmText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/indexTextViewConclusion"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="BPM ANALYSIS"
+            android:padding="16dp" />
+
+        <!-- TextView per la media iniziale -->
+        <TextView
+            android:id="@+id/initialAverageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bpmText"
+            android:textSize="18sp"
+            android:padding="1dp" />
+
+        <!-- TextView per la media intermedia -->
+        <TextView
+            android:id="@+id/midAverageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/initialAverageTextView"
+            android:textSize="18sp"
+            android:padding="1dp" />
+
+        <!-- TextView per la media finale -->
+        <TextView
+            android:id="@+id/finalAverageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/midAverageTextView"
+            android:padding="1dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/myturnAverageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/finalAverageTextView"
+            android:padding="1dp"
+            android:textSize="18sp"
+            android:layout_marginTop="25sp"/>
+
+        <TextView
+            android:id="@+id/advAverageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myturnAverageTextView"
+            android:padding="1dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/averageTextViewConclusion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/advAverageTextView"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="35sp"/>
+
+    </RelativeLayout>
+</ScrollView>

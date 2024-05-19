@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp">
+
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Error"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationY="-75px" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/errorTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:stateListAnimator="@null"
+        android:text="Retry"
+        android:background="@drawable/round_button"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@android:drawable/stat_notify_error"
+        android:translationY="-20px" />
+
+
+</RelativeLayout>

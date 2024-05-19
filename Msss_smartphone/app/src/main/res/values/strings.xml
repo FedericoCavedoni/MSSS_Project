@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Heart-Mate</string>
+    <string name="bluetooth_connection">Connect to Bluetooth Device</string>
+    <string name="bluetooth_connection_btn">Connect</string>
+    <string name="heart_rate_title">Heart Rate Analysis</string>
+    <string name="home">Home</string>
+    <string name="starting_time">1:00</string>
+    <string name="end_time">00:00</string>
+    <string name="play_btn_description">Play button</string>
+    <string name="pause_btn_description">Pause button</string>
+    <string name="settings_btn_description">Settings button</string>
+    <string name="end_btn_description">End button</string>
+    <string name="waiting">Waiting for connections…</string>
+    <string name="background_img_description">Background chess image</string>
+    <string name="previous_games">Previous games</string>
+    <string name="back">Back</string>
+    <string name="select">Select</string>
+    <string name="play">Play</string>
+    <string name="history">History</string>
+    <string name="quit">Quit</string>
+    <string name="smartwatch_img_description">Smartwatch image</string>
+    <string name="first_tip">Try to focus more on the end games, the drop in BPM indicates a lower level of concentration in this phase of the game</string>
+    <string name="second_tip">Try to focus more on the mid games, the drop in BPM indicates a lower level of concentration in this phase of the game</string>
+    <string name="third_tip">Your concentration level remained high throughout the match. you re doing great!</string>
+
+    <string name="turnok_tip">Your concentration level remained high throughout the game on both your and your opponent s turns. you re doing great!</string>
+    <string name="turnbad_tip">Your concentration level is changed throughout the game on both your and your opponent s turns. Try to focus during all the game phases </string>
+
+    <string name="stress">You obtained a low value of the HRV indices, this is due to an increase in the difficulty perceived during the game due to greater stress.</string>
+    <string name="moderate_stress">You obtained moderate values of the HRV indices, you can improve your adaptability to be a master in chess!!</string>
+    <string name="no_stress">You obtained a correct value of the HRV indices, this game was easy for you and you were not stressed at all!!.</string>
+
+
+</resources>

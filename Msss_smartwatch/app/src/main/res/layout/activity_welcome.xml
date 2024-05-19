@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Heart-Mate"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationY="-100px" />
+
+    <TextView
+        android:id="@+id/startingTextView"
+        android:layout_width="290px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Start the application on the smartphone"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:translationY="40px" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="84dp"
+        android:layout_height="89dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:rotation="0"
+        android:src="@drawable/heart"
+        android:textAlignment="textEnd"
+        android:translationX="0px"
+        android:translationY="0px" />
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Chess Detection Activity Ended"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:translationY="-46sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="61dp"
+        android:layout_height="68dp"
+        android:layout_centerInParent="true"
+        android:rotation="0"
+        android:src="@drawable/smartphone"
+        android:textAlignment="textEnd"
+        android:translationY="8sp" />
+
+    <TextView
+        android:id="@+id/bottomTextView"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Watch the Smartphone for the results"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:translationY="52sp" />
+
+</RelativeLayout>

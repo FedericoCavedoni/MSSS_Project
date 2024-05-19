@@ -1,0 +1,87 @@
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/topTimer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/buttoncolor"
+            android:rotation="180"
+            android:text="@string/starting_time"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="96sp"
+            android:visibility="visible"
+            tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/playBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/black"
+                android:contentDescription="@string/play_btn_description"
+                android:scaleType="centerInside"
+                android:src="@drawable/play"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/stopBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30sp"
+                android:background="@color/black"
+                android:contentDescription="@string/pause_btn_description"
+                android:scaleType="centerInside"
+                android:src="@drawable/pause"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/settingsBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30sp"
+                android:background="@color/black"
+                android:contentDescription="@string/settings_btn_description"
+                android:scaleType="centerInside"
+                android:src="@drawable/settings"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/endBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30sp"
+                android:background="@color/black"
+                android:contentDescription="@string/end_btn_description"
+                android:scaleType="centerInside"
+                android:src="@drawable/end"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bottomTimer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/buttoncolor"
+            android:text="@string/starting_time"
+            android:textColor="@color/white"
+            android:textSize="96sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</layout>

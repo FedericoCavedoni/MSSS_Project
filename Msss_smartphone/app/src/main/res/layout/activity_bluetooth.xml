@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bluetooth"
+    tools:context=".BluetoothActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:contentDescription="@string/background_img_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_img" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0sp"
+        android:layout_marginTop="40sp"
+        android:gravity="center"
+        android:text="@string/bluetooth_connection"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/device_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0sp"
+        android:layout_marginTop="100sp"
+        android:minHeight="48dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/connect_button"
+        android:text="@string/bluetooth_connection_btn"
+        android:layout_marginTop="170sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
+        android:layout_width="200sp"
+        android:layout_height="55sp"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+</RelativeLayout>

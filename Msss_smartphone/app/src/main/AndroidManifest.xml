@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icona_app"
+        android:label="Heart-Mate"
+        android:roundIcon="@drawable/icona_app_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Msss_smartphone"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Msss_smartphone">
+        </activity>
+        <activity
+            android:name=".HomePageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameEndedActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".BluetoothActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".HistoryManager"
+            android:exported="true"
+            android:label="History Manager">
+        </activity>
+        <activity android:name=".MainActivityWaiting"
+            android:exported="true">
+        </activity>
+
+    </application>
+
+</manifest>
