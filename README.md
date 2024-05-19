@@ -1,2 +1,2 @@
 # MSSS_Project
-Project of Foundations of Cybersecurity Course (Master Degree in Computer Engineering UNIPI)
+Project of Mobile and social sensing systems Course (Master Degree in Computer Engineering UNIPI)
